@@ -72,6 +72,18 @@ formában írassa ki! Ha több ilyen mérési eredmény is van, mindegyik koordi
 jelenjen meg!
 """
 print("4. feladat")
-print(f"A tó legnagyobb mélysége: 98 dm")
-print(f"A legmélyebb helyek sor-oszlop koordinátái:\n")
-print("(14; 20) (26; 11) (32; 16)")
+def max_kivalasztas(m):
+    max_sor=0
+    max_oszlop=0
+    for i in range(1,len(m)):
+        for j in range(len(m[i])):
+            if m[max_sor][max_oszlop]<m[i][j]:
+                max_sor=i
+                max_oszlop=j
+    print([max_sor][max_oszlop])
+
+
+
+print(f"A tó legnagyobb mélysége: {max_kivalasztas(melysegek)} dm")
+# print(f"A legmélyebb helyek sor-oszlop koordinátái:\n")
+# print("(14; 20) (26; 11) (32; 16)")
