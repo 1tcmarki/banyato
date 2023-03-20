@@ -23,3 +23,13 @@ for melyseg_sor in melysegek:
             print(f"{Back.RESET}{Fore.RESET}{melyseg:2d}",end=" ")
    
    print() 
+
+"""
+2. feladat
+Kérje be egy mérési eredmény sor- és oszlopazonosítóját, majd írassa ki az adott helyen
+mért adatot a képernyőre! (A sorok és oszlopok számozása kezdődjön 1-gyel!) 
+"""
+print("2. feladat")
+be_sor=int(input("A mérés sorának azonosítója= (12) ") or "12")
+be_oszlop=int(input("A mérés oszlopának azonosítója= (6) ") or "6")
+print(f"A mért mélység az adott helyen {melysegek[be_sor-1][be_oszlop-1]} dm")
