@@ -48,9 +48,18 @@ def megszamolas(m):
                 db+=1
     return db
 
+def atlagolas(m):
+    osszeg=0
+    darab=0
+    for seged_lista in m:
+        for elem in seged_lista:
+            if elem>0:
+                darab+=1
+                osszeg+=elem
+    return osszeg/darab
 
 
 felszin=megszamolas(melysegek)
 atlagos_melyseg=0
 print("3. feladat")
-print(f"A tó felszíne: {megszamolas(melysegek*1)} m2, átlagos mélysége: {atlagos_melyseg} m")
+print(f"A tó felszíne: {megszamolas(melysegek*1)} m2, átlagos mélysége: {atlagolas(melysegek)/10:0.2f} m")
