@@ -33,3 +33,24 @@ print("2. feladat")
 be_sor=int(input("A mérés sorának azonosítója= (12) ") or "12")
 be_oszlop=int(input("A mérés oszlopának azonosítója= (6) ") or "6")
 print(f"A mért mélység az adott helyen {melysegek[be_sor-1][be_oszlop-1]} dm")
+
+"""
+3. feladat
+Határozza meg a tó (vagyis az ábrán szürkével jelölt rész) felszínének területét, valamint
+a tó átlagos mélységét! Írassa ki a két eredményt a mintának megfelelően a képernyőre!
+A tó átlagos mélysége méterben kifejezve, két tizedesjegy pontossággal jelenjen meg! 
+"""
+def megszamolas(m):
+    db=0
+    for seged_lista in m:
+        for elem in seged_lista:
+            if elem>0:
+                db+=1
+    return db
+
+
+
+felszin=megszamolas(melysegek)
+atlagos_melyseg=0
+print("3. feladat")
+print(f"A tó felszíne: {megszamolas(melysegek*1)} m2, átlagos mélysége: {atlagos_melyseg} m")
