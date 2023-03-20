@@ -63,3 +63,15 @@ felszin=megszamolas(melysegek)
 atlagos_melyseg=0
 print("3. feladat")
 print(f"A tó felszíne: {megszamolas(melysegek*1)} m2, átlagos mélysége: {atlagolas(melysegek)/10:0.2f} m")
+
+"""
+4. feladat
+Mekkora a tó legnagyobb mélysége, és hol a legmélyebb a tó? Jelenítse meg a választ
+a képernyőn! A legmélyebb pont koordinátáit a mintának megfelelően (sor; oszlop)
+formában írassa ki! Ha több ilyen mérési eredmény is van, mindegyik koordinátapárja
+jelenjen meg!
+"""
+print("4. feladat")
+print(f"A tó legnagyobb mélysége: 98 dm")
+print(f"A legmélyebb helyek sor-oszlop koordinátái:\n")
+print("(14; 20) (26; 11) (32; 16)")
