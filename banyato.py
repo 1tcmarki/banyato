@@ -88,15 +88,15 @@ max_kivalasztas(melysegek)
 max_s, max_o, = max_kivalasztas(melysegek)
 print(f"A tó legnagyobb mélysége: {melysegek[max_s][max_o]} dm")
 def legmelyebb_pontok_koordinatai(m,max):
-    for sor in enumerate(m):
+    for sor_index,sor in enumerate(m):
         for oszlop_index,elem in enumerate(sor):
             if elem==max:
-                print()
+                print(f"({sor_index+1} ; {oszlop_index+1})",end="")
 
 
 
 legmelyebb_pontok_koordinatai(melysegek, melysegek[max_s][max_o])
-print(f"A legmélyebb helyek sor-oszlop koordinátái: ")
+
 
 
 #print("(14; 20) (26; 11) (32; 16)")
